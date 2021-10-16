@@ -2,9 +2,11 @@ import Head from 'next/head'
 import { Header } from '../components/header'
 import { Price } from '../components/price'
 
+import styles from '../styles/app.module.scss'
+
 export default function Home() {
   return (
-    <div>
+    <div className={styles.app}>
       <Head>
         <title>Draco Price</title>
         <meta name="description" content="Draco Price" />
