@@ -9,7 +9,7 @@ export function Price() {
 
   const date = format(new Date(), 'HH:mm (dd-MM-yyyy)')
   const [dracoUSD, setDracoUSD] = useState('')
-  const [derbyDS, setDerbyDS] = useState(0)
+  const [derbyDS, setDerbyDS] = useState('')
 
   useEffect(() => {
     axios.post('https://api.mir4global.com/wallet/prices/draco/lastest')
